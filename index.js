@@ -7,17 +7,13 @@ const navBar = (
       <li>About</li>
       <li>Contact</li>
     </ul>
+    <h3>Friday Grand Openning</h3>
+    <h4>Kids eat for free</h4>
   </nav>
 )
 
-//React 17
-//ReactDOM.render(navBar,document.getElementById('root'))
-//render(what do i want to render, where to render it)
+//ReactDOM.createRoot(document.getElementById('root')).render(navBar)
+document.getElementById('root').append(JSON.stringify(navBar));
 
-//React 18 
-//ReactDOM.createRoot(document.getElementById('root')).render(navBar);
-
-//OR
-
-const root = ReactDOM.createRoot(document.getElementById('root'))
-.render(navBar);
+//.append returns JSX objects
+//Use JSON.stringify() to see the objects
