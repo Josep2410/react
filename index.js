@@ -10,5 +10,9 @@ const navBar = (
   </nav>
 )
 
+//React 17
 ReactDOM.render(navBar,document.getElementById('root'))
 //render(what do i want to render, where to render it)
+
+//React 18 
+ReactDOM.createRoot(document.getElementById('root')).render(navBar);
