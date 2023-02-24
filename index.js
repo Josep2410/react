@@ -1,28 +1,29 @@
-/* import React from "react"
-import ReactDOM from "react-dom" */
+/* 
+Quiz!
 
-function Page() {
+1. What is a React component?
+A function that returns React elements. (UI)
+
+2. What's wrong with this code?
+```
+function MyComponent() {
     return (
-        <div>
+        <small>I'm tiny text!</small>
+    )
+}
+```
+
+3. What's wrong with this code?
+```
+function Header() {
+    return (
         <header>
             <nav>
-                <img src="./react-logo.png" width="40px"/>
+                <img src="./react-logo.png" width="40px" />
             </nav>
         </header>
-        <h1>Reason's I'm excited to learn React
-        </h1>
-        <ol>
-            <li>It's a popular library, so I'll be 
-            able to fit in with the cool kids!</li>
-            <li>I'm more likely to get a job as a developer
-            if I know React</li>
-        </ol>
-        <footer><small>© 2023 Moreno development. All rights reserved.</small>
-        </footer>
-        </div>
-        
     )
 }
 
-//ReactDOM.render(<Page />, document.getElementById("root"))
-ReactDOM.createRoot(document.getElementById('root')).render(<Page/>)
+ReactDOM.render(<Header />, document.getElementById("root"))
+``` */
