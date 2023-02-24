@@ -1,4 +1,35 @@
-html, body {
-  margin: 0;
-  padding: 0;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  width: 60px;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+}
+
+.nav-items > li {
+  padding: 10px;
+}
+
+.myFooter{
+ position: absolute;
+ bottom:0px; 
+ width: 96vw;
+ text-align: center;
+ padding-top:10px;
+ background-color: grey;
+ color:white;
+ height:40px;
+  font-size: 30px;
+}
+
+.bodyContainer{
+  height:100vh;
+  position: relative;
 }
