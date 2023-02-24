@@ -1,19 +1,22 @@
+//how to import react and react dom when you dont have CDN
+//import React from 'react'
+//import ReactDOM from 'react-dom'
 
-const navBar = (
-  <nav>
-    <h1>Hocus Pocus</h1>
+
+
+const page = (
+  <div>
+    <h1>Fun facts about React</h1>
     <ul>
-      <li>Pricing</li>
-      <li>About</li>
-      <li>Contact</li>
+      <li>Was first released in 2013</li>
+      <li>Was originally created by Jordan Walke</li>
+      <li>Has well over 100k stars on Github</li>
+      <li>Is maintained by Facebook</li>
+      <li>Powers thousands of enterprise apps, including mobile apps</li>
     </ul>
-    <h3>Friday Grand Openning</h3>
-    <h4>Kids eat for free</h4>
-  </nav>
+  </div>
+
 )
 
-//ReactDOM.createRoot(document.getElementById('root')).render(navBar)
-document.getElementById('root').append(JSON.stringify(navBar));
-
-//.append returns JSX objects
-//Use JSON.stringify() to see the objects
+ReactDOM.createRoot(document.getElementById('root')).render(page);
+//ReactDOM.render(page, document.getElementById('root'))
