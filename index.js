@@ -1,20 +1,7 @@
-/* 
-Quiz!
+import React from "react"
+import ReactDOM from "react-dom"
 
-1. What is a React component?
-A function that returns React elements. (UI)
 
-2. What's wrong with this code?
-```
-function MyComponent() {
-    return (
-        <small>I'm tiny text!</small>
-    )
-}
-```
-
-3. What's wrong with this code?
-```
 function Header() {
     return (
         <header>
@@ -25,5 +12,36 @@ function Header() {
     )
 }
 
-ReactDOM.render(<Header />, document.getElementById("root"))
-``` */
+function Footer() {
+    return (
+        <footer>
+            <small>© 2021 Ziroll development. All rights reserved.</small>
+        </footer>
+    )
+}
+
+function MainContent() {
+    return (
+        <div>
+            <h1>Reasons I'm excited to learn React</h1>
+            <ol>
+                <li>It's a popular library, so I'll be 
+                able to fit in with the cool kids!</li>
+                <li>I'm more likely to get a job as a developer
+                if I know React</li>
+            </ol>
+        </div>
+    )
+}
+
+function Page() {
+    return (
+        <div>
+            <Header />
+            <MainContent />
+            <Footer />
+        </div>
+    )
+}
+
+ReactDOM.render(<Page />, document.getElementById("root"))
